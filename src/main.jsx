@@ -7,3 +7,4 @@ import "./output.css"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={routes} />)
+//ReactDOM.render(<RouterProvider router={routes} />, document.getElementById("root"));

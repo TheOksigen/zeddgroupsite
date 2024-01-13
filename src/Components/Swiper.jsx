@@ -10,14 +10,14 @@ import 'swiper/css/scrollbar'; // Add scrollbar CSS
 
 export default function MySwiper() {
 	const [swiperRef, setSwiperRef] = useState(null);
-	const slides = ["Slide 1", "Slide 2", "Slide 3", "Slide 4", "Slide 5", "Slide 6", "Slide 7", "Slide 8", "Slide 9"];
+	const slides = ["Slide 1", "Slide 2", "Slide 3", "Slide 4", "Slide 5", "Slide 6", "Slide 7", "Slide 8", "Slide 9", "Slider 10", "Slider 11"];
 
 	return (
 		<>
 			<SwiperReact
 				modules={[Virtual, Navigation, Pagination, Autoplay]}
 				onSwiper={setSwiperRef}
-				slidesPerView={1}
+				slidesPerView={3}
 				spaceBetween={30}
 				autoplay={{
 					delay: 2500,
@@ -26,6 +26,10 @@ export default function MySwiper() {
 				navigation={true}
 				virtual
 				breakpoints={{
+					450: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					},
 					640: {
 						slidesPerView: 2,
 						spaceBetween: 20,

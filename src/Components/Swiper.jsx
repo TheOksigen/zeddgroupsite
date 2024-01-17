@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-import 'swiper/css/scrollbar'; // Add scrollbar CSS
+import 'swiper/css/scrollbar';
 
 export default function MySwiper() {
 	const [swiperRef, setSwiperRef] = useState(null);
@@ -29,6 +29,8 @@ export default function MySwiper() {
 					450: {
 						slidesPerView: 1,
 						spaceBetween: 10,
+						navigation: false
+						
 					},
 					640: {
 						slidesPerView: 2,
